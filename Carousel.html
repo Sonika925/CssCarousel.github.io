@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Page Title</title>
+        <style>
+        body{
+
+background-image:url("https://i.pinimg.com/originals/91/e4/f2/91e4f2bcb58c8e224b4611fe99ae1f29.jpg");
+
+background-attachment:fixed ;
+
+background-repeat:no-repeat;
+
+}
+
+#nature{
+
+  position:absolute;
+
+  width:100%;
+
+  height:100%;
+
+  line-height:180vh;
+
+  top:0;
+
+  left:0;
+
+  text-align:center;
+
+}
+
+ img{
+
+  position:absolute;
+
+  height:60%;
+
+  width:100%;
+
+  top:0%;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  opacity:0;
+
+  transition:opacity 0.2s linear;
+
+}
+
+input:checked+span>img {
+
+    transition-delay:0.1s; 
+
+    opacity:0.9;
+
+}
+
+@keyframes zoomIn {
+
+    0%,100%{
+
+      transform:scale(1);  
+
+    }
+
+    50%{
+
+        transform:scale(1.8);
+
+    }
+
+}
+
+ label:before{
+
+  content:"";
+
+  display: inline-block;
+
+  width: 15px;
+
+  height: 15px;
+
+  border: 1px solid white;
+
+  margin:2%;
+
+  border-radius:50%;
+
+}
+
+input:checked+span> label:before{  
+
+ background-color:#00bfff;
+
+ justify-content:space-around;
+
+ animation:zoomIn 0.6s;
+
+}
+
+ input{
+
+  display:none;
+
+}
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="nature">
+
+  <input id="1st" type="radio" name="bullet" checked="checked">
+
+  <span>
+
+  <label for="1st"></label>
+
+    <img src="https://static.demilked.com/wp-content/uploads/2014/06/nordic-landscape-nature-photography-iceland-34.jpg"/>
+
+  </span>
+
+  <input id="2nd" type="radio" name="bullet">
+
+  <span>
+
+    <label for="2nd"></label>
+
+    <img src="https://i.pinimg.com/originals/93/f2/aa/93f2aa9515441285236ef4f58b01e702.jpg"/>
+
+  </span>
+
+  <input id="3rd" type="radio" name="bullet">
+
+  <span>
+
+    <label for="3rd"></label>
+
+    <img src="https://i.pinimg.com/originals/82/1e/28/821e282028abfac88ff9e26fb47f695f.jpg"/>
+
+  </span>
+
+  <input id="4th" type="radio" name="bullet">
+
+  <span>
+
+    <label for="4th"></label>
+
+    <img src="https://c.wallhere.com/photos/cb/5b/she_flowers_trees_woman_flower_tree_green_art-540363.jpg!d"/>
+
+  </span>
+
+  <input id="5th" type="radio" name="bullet">
+
+  <span>
+
+    <label for="5th"></label>
+
+    <img src="https://www.tell-a-tale.com/wp-content/uploads/2016/03/fairy-tale-world-1185228_1280_compressed-1024x680-1.jpg"/>
+
+  </span>
+
+  <input id="7th" type="radio" name="bullet">
+
+  <span>
+
+    <label for="7th"></label>
+
+    <img src="https://i.pinimg.com/originals/91/e4/f2/91e4f2bcb58c8e224b4611fe99ae1f29.jpg"/>
+
+  </span>
+
+   <input id="6th" type="radio" name="bullet">
+
+  <span>
+
+    <label for="6th"></label>
+
+    <img src="https://i.pinimg.com/564x/a4/12/81/a412819d3a34d221273c7ddd877ed553.jpg"/>
+
+  </span>
+
+</div>
+
+    </body>
+
+</html>
